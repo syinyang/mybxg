@@ -1,4 +1,4 @@
-define(['jquery','cookie'],function($) {
+define(['jquery','template','cookie'],function($,template) {
 	$('.navs ul').prev('a').on('click', function () {
 		$(this).next().slideToggle();
 	});
@@ -22,8 +22,14 @@ define(['jquery','cookie'],function($) {
     var loginInfo = $.cookie('loginInfo') && JSON.parse($.cookie('loginInfo'));
     // console.log(loginInfo);
     if(loginInfo){
-    	$('.aside .profile').find('img').attr('src',loginInfo.tc_avatar);
-    	$('.aside .profile').find('h4').html(loginInfo.tc_name);
+
+    	var loginTpl = '<div class="avatar img-circle"><img src="{{tc_avatar}}"></div><h4>{{tc_name}}</h4>';
+        
+        var html = template.render(loginTpl,loginInfo);  
+        $("#loginInfoTpl").html(html);
+        
+    	// $('.aside .profile').find('img').attr('src',loginInfo.tc_avatar);
+    	// $('.aside .profile').find('h4').html(loginInfo.tc_name);
 
     }else if(pathname != '/login'){
     	location.href = '/login';
