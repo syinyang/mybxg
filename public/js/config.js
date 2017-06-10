@@ -6,7 +6,8 @@ requirejs.config({
 		cookie: 'jquery-cookie/jquery.cookie',
 		common: '../js/common',
 		login: '../js/login',
-		template: 'artTemplate/template-web'
+		template: 'artTemplate/template-web',
+		tealist: '../js/teacher-list'
 	},
 	shim: {
 		bootstrap: {
