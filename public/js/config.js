@@ -5,6 +5,8 @@ requirejs.config({
 		bootstrap: 'bootstrap/js/bootstrap.min',
 		cookie: 'jquery-cookie/jquery.cookie',
 		common: '../js/common',
+		util: '../js/util',
+		index: '../js/index',
 		login: '../js/login',
 		template: 'artTemplate/template-web',
 		tealist: '../js/teacher-list'
