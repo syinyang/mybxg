@@ -10,6 +10,7 @@ requirejs.config({
 		login: '../js/login',
 		template: 'artTemplate/template-web',
 		tealist: '../js/teacher-list',
+		teaadd: '../js/teacher-add',
 		nprogress: 'nprogress/nprogress'
 	},
 	shim: {
