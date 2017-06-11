@@ -9,7 +9,8 @@ requirejs.config({
 		index: '../js/index',
 		login: '../js/login',
 		template: 'artTemplate/template-web',
-		tealist: '../js/teacher-list'
+		tealist: '../js/teacher-list',
+		nprogress: 'nprogress/nprogress'
 	},
 	shim: {
 		bootstrap: {

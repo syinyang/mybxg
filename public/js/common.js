@@ -1,4 +1,8 @@
-define(['jquery','template','cookie'],function($,template) {
+define(['jquery','template','nprogress','cookie'],function($,template,NProgress) {
+
+	NProgress.start();
+	NProgress.done();
+
 	$('.navs ul').prev('a').on('click', function () {
 		$(this).next().slideToggle();
 	});
@@ -35,6 +39,14 @@ define(['jquery','template','cookie'],function($,template) {
     	location.href = '/login';
     	// console.log(12);
     }
+
+    $(document).ajaxStart(function() {
+    	$(".overlay").show();
+    });
+
+    $(document).ajaxStop(function() {
+    	$(".overlay").hide();
+    });
 });
 
 	
