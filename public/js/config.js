@@ -11,10 +11,15 @@ requirejs.config({
 		template: 'artTemplate/template-web',
 		tealist: '../js/teacher-list',
 		teaadd: '../js/teacher-add',
-		nprogress: 'nprogress/nprogress'
+		nprogress: 'nprogress/nprogress',
+		validate: 'validate/jquery-validate',
+		form: 'jquery-form/jquery.form'
 	},
 	shim: {
 		bootstrap: {
+			deps: ['jquery']
+		},
+		validate: {
 			deps: ['jquery']
 		}
 	}
