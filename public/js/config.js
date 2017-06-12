@@ -13,7 +13,9 @@ requirejs.config({
 		teaadd: '../js/teacher-add',
 		nprogress: 'nprogress/nprogress',
 		validate: 'validate/jquery-validate',
-		form: 'jquery-form/jquery.form'
+		form: 'jquery-form/jquery.form',
+		datepicker: 'bootstrap-datepicker/js/bootstrap-datepicker.min',
+		language: 'bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min'
 	},
 	shim: {
 		bootstrap: {
@@ -21,6 +23,9 @@ requirejs.config({
 		},
 		validate: {
 			deps: ['jquery']
+		},
+		language: {
+			deps: ['jquery','datepicker']
 		}
 	}
 });

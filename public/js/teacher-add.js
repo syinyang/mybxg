@@ -1,4 +1,4 @@
-define(['jquery','util','template','form','validate'],function($,util,template) {
+define(['jquery','util','template','form','validate','datepicker','language'],function($,util,template) {
 	util.setMenu('/teacher/list');
 	
 	function submitForm(url) {
