@@ -19,7 +19,8 @@ requirejs.config({
 		ckeditor: 'ckeditor/ckeditor',
 		datepicker: 'bootstrap-datepicker/js/bootstrap-datepicker.min',
 		language: 'bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min',
-		settings: '../js/settings'
+		settings: '../js/settings',
+		courselist: '../js/course'
 	},
 	shim: {
 		bootstrap: {
