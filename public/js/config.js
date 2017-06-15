@@ -17,10 +17,14 @@ requirejs.config({
 		uploadify: 'uploadify/jquery.uploadify.min',
 		region: 'region/jquery.region',
 		ckeditor: 'ckeditor/ckeditor',
+		jcrop: 'jcrop/js/Jcrop',
 		datepicker: 'bootstrap-datepicker/js/bootstrap-datepicker.min',
 		language: 'bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min',
 		settings: '../js/settings',
-		courselist: '../js/course'
+		courselist: '../js/course_list',
+		courseadd: '../js/course_add',
+		coursebasic: '../js/basic',
+		coursepicture: '../js/picture'
 	},
 	shim: {
 		bootstrap: {
@@ -37,6 +41,9 @@ requirejs.config({
 		},
 		ckeditor: {
 			exports: 'CKEDITOR'
+		},
+		jcrop: {
+			deps: ['jquery']
 		}
 	}
 });
